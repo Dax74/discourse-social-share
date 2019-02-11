@@ -16,3 +16,27 @@
     });
   });
 </script>
+<script type="text/discourse-plugin" version="0.8.23">
+  api.addSharingSource({
+    id: settings.whatsapp,
+    icon: settings.social_icon,
+    title: "",
+    generateUrl: function(link, title) {
+      return settings.whatsapp + encodeURIComponent(link)  + "&title=" + encodeURIComponent(title);
+    },
+    shouldOpenInPopup: true,
+    popupHeight: 265
+  })
+</script>
+<script type="text/discourse-plugin" version="0.8.23">
+  api.addSharingSource({
+    id: settings.whatsapp_web,
+    icon: settings.social_icon,
+    title: "",
+    generateUrl: function(link, title) {
+      return settings.whatsapp_web + encodeURIComponent(link)  + "&title=" + encodeURIComponent(title);
+    },
+    shouldOpenInPopup: true,
+    popupHeight: 265
+  })
+</script>
