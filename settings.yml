@@ -8,3 +8,12 @@ svg_icons:
   type: 'list'
   list_type: 'compact'
   description: 'List of FontAwesome 5 icons used in this theme component'
+whatsapp:
+ default: ""
+ description: 
+   en: 'xxxxxxx'
+whatsapp_web:
+ default: ""
+ description: 
+   en: 'yyyyyy'
+   
